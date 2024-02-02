@@ -9,7 +9,7 @@ class Graph:
 
     def BFS(self, start):
         visited = {node: False for node in self.graph}
-        color = {node: "WHITE" for node in self.graph}
+        color = {node: "white" for node in self.graph}
         queue = []
 
         queue.append(start)
@@ -23,8 +23,8 @@ class Graph:
                 if not visited[neighbor]:
                     visited[neighbor] = True
                     queue.append(neighbor)
-                    color[neighbor] = "GRAY"
-            color[current] = "BLACK"
+                    color[neighbor] = "grey"
+            color[current] = "black"
 
         print("\nColors:", color)
 
